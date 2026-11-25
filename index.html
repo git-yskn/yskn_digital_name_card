@@ -325,7 +325,7 @@
                 <button type="button" onclick="salinAlamatSekretariat()" class="py-2.5 px-3 rounded-2xl text-xs font-bold bg-slate-100 dark:bg-[#161f30] text-slate-800 dark:text-white border border-slate-200 dark:border-slate-700">
                     Salin Alamat
                 </button>
-                <a id="sekretariat-maps-link" href="https://maps.app.goo.gl/u6EtyQFa6AY6FtgF6" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center py-2.5 px-3 rounded-2xl text-xs font-bold bg-amber-400 text-slate-950">
+                <a id="sekretariat-maps-link" href="https://maps.google.com/?q=Harapan+Indah+Kota+Bekasi" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center py-2.5 px-3 rounded-2xl text-xs font-bold bg-amber-400 text-slate-950">
                     Buka Google Maps
                 </a>
             </div>
@@ -474,6 +474,7 @@
             document.getElementById('action-wa').href = `https://wa.me/${waNumber}?text=${pesanWa}`;
             document.getElementById('action-email').href = `mailto:${m.email}`;
             document.getElementById('sekretariat-alamat-teks').textContent = m.address;
+            document.getElementById('sekretariat-maps-link').href = `https://maps.google.com/?q=${encodeURIComponent(m.address)}`;
         }
 
         // Modal Pilih Organ Yayasan
